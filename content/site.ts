@@ -21,7 +21,7 @@ export const hero = {
  * Use `null` for a placeholder slot.
  */
 export const heroGalleryImages: { src: string | null; alt: string }[] = [
-  { src: "/hero/RedditHeadshotCropped.jpg", alt: "Monica Hicks" },
+  { src: "/hero/RedditHeadshotCropped.png", alt: "Monica Hicks" },
   { src: "/hero/ShanghaiSelfie.jpg", alt: "Monica Hicks" },
   { src: "/hero/AndrewYang.jpg", alt: "Monica Hicks" },
 ];
