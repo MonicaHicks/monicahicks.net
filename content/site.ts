@@ -83,6 +83,17 @@ export const selectedWork = [
 
 export const projects = [
   {
+    title: "Monidoro.com",
+    summary:
+      "Monidoro is a productivity app that allows users to set an intention and to-dos for the session before diving into rhythmic cycles of work and restorative rest. Each interval is fully customizable, allowing the user to select the interval length, background video, and audio sound. At the end of each work session, the user can document the progress of their goals in a pop-up modal. At the end of the full Pomodoro session, users have a full account of their progress and accomplishments based on their incremental check-ins.",
+    stack: ["Next.js", "React", "Pomodoro", "Productivity", "Wellness"],
+    links: {
+      github: null,
+      demo: "https://monidoro.com",
+      demoLabel: "Live site",
+    },
+  },
+  {
     title: "Astrophysics Publication",
     summary:"Built Python tools for an astrophysics research project (published in the Astrophysical Journal) to measure extragalactic contamination in simulated maps of the sky. Helped validate improved models used in cosmic microwave background (CMB) research by analyzing correlations between emission and galaxy distributions.",
     stack: ["Python", "NumPy", "SciPy", "Data Analysis", "Scientific Computing"],
@@ -99,13 +110,6 @@ export const projects = [
     links: {
       github: "https://github.com/MonicaHicks/CS-SG-Education-Outreach-Python-Curriculum",  demo: null
     },
-  },
-  {
-    title: "Phatty App",
-    summary:
-      "Frustrated with fitness tracking apps that didn’t meet my standards, I started building my own. This app focuses on simplicity and ease of use to support consistency, with core features including exercise and rep tracking and custom interval workout creation.",
-    stack: ["TypeScript", "React Native", "Expo", "Supabase", "Fitness", "Hobby"],
-    links: { github: "https://github.com/MonicaHicks/PhattyApp", demo: null },
   },
 ] as const;
 

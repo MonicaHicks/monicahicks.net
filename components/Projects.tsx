@@ -31,14 +31,16 @@ export function Projects() {
                 ))}
               </ul>
               <div className="mt-4 flex flex-wrap justify-center gap-x-3 gap-y-1 font-sans text-sm font-semibold">
-                <a
-                  href={project.links.github}
-                  className="text-accent underline-offset-4 transition hover:underline"
-                  rel="noreferrer noopener"
-                  target="_blank"
-                >
-                  GitHub
-                </a>
+                {project.links.github ? (
+                  <a
+                    href={project.links.github}
+                    className="text-accent underline-offset-4 transition hover:underline"
+                    rel="noreferrer noopener"
+                    target="_blank"
+                  >
+                    GitHub
+                  </a>
+                ) : null}
                 {project.links.demo ? (
                   <a
                     href={project.links.demo}
@@ -46,7 +48,7 @@ export function Projects() {
                     rel="noreferrer noopener"
                     target="_blank"
                   >
-                    Publication
+                    {"demoLabel" in project.links ? project.links.demoLabel : "Publication"}
                   </a>
                 ) : null}
               </div>
